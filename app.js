@@ -131,11 +131,11 @@ function subMatrix(matrix1, matrix2) {
 function mulMatrix(matrix1, matrix2) {
     var aNumRows = matrix1.length, aNumCols = matrix1[0].length,
         bNumRows = matrix2.length, bNumCols = matrix2[0].length,
-        result = new Array(aNumRows);  // initialize array of rows
+        result = new Array(aNumRows);
     for (var r = 0; r < aNumRows; ++r) {
-        result[r] = new Array(bNumCols); // initialize the current row
+        result[r] = new Array(bNumCols);
         for (var c = 0; c < bNumCols; ++c) {
-            result[r][c] = 0;             // initialize the current cell
+            result[r][c] = 0;
             for (var i = 0; i < aNumCols; ++i) {
                 result[r][c] += matrix1[r][i] * matrix2[i][c];
             }
